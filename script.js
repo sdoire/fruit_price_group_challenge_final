@@ -85,7 +85,7 @@ $(document).ready(function(){
 		User.totalNumOranges++;
 		User.spentOranges += fruitPrices[1][1];
 		User.cash -= fruitPrices[1][1];
-	var avgOrange = User.spentOrange / User.totalNumOranges;
+	var avgOrange = User.spentOranges / User.totalNumOranges;
 	$('.userorange > .inventory').text(User.numCurrentOranges);
 	$('.userorange > .avgprice').text(avgOrange);
 	$('.cash').text("$" + User.cash);
